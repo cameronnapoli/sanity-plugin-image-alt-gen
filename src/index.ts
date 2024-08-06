@@ -19,7 +19,7 @@ interface ImageAltGenPluginConfig {
  * })
  * ```
  */
-export const myPlugin = definePlugin<ImageAltGenPluginConfig | void>((config) => {
+export const altGenTool = definePlugin<ImageAltGenPluginConfig | void>((config) => {
   // eslint-disable-next-line no-console
   return {
     name: 'sanity-plugin-image-alt-gen',

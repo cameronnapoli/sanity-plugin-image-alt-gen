@@ -3,12 +3,14 @@ import React from 'react'
 
 interface Props {
   apiKey?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  renderDefault: (props: any) => React.ReactNode
 }
 
-const Component: React.FC<Props> = () => {
+const Component: React.FC<Props> = (props) => {
   return (
     <Stack space={3}>
-      <Box>Hey, I&apos;m a custom input component!</Box>
+      <Box>{props.renderDefault(props)}</Box>
     </Stack>
   )
 }

@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-image-alt-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate image alt values with AI.",
   "keywords": [
     "sanity",
